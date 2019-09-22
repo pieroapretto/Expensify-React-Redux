@@ -4,6 +4,9 @@
   "author": "Piero Pretto",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": "12.3.0"
+  },
   "scripts": {
     "start": "node server/server.js",
     "serve": "live-server public/",
