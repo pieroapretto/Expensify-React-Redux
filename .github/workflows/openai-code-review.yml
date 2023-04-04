@@ -20,8 +20,11 @@ jobs:
       with:
         node-version: 14.19.2
 
+    - name: Install Yarn
+      run: npm install -g yarn
+
     - name: Install dependencies
-      run: npm ci
+      run: yarn install --frozen-lockfile
 
     - name: Get pull request diff
       id: get_diff
