@@ -16,6 +16,8 @@ const main = async () => {
   // Read the content of the pr_diff.txt file
   const pr_diff = fs.readFileSync("pr_diff.txt", "utf8");
 
+  console.log(pr_diff)
+
   // Set your variables
   const token = process.env.GITHUB_TOKEN;
   const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
